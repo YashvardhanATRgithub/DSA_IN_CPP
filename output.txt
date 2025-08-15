@@ -1,2 +1,0 @@
-Max element: 17
-Min element: 8
