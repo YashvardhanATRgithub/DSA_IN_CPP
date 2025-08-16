@@ -2,16 +2,17 @@
 using namespace std;
 
 // Nth Fibonacci using iterative approach
-void iterativeFib(int n) {
-    int fib[n];
-    fib[0] = 0;
-    fib[1] = 1;
-
-    int i;
-    for(i = 2; i <= n; i ++) {
-        fib[i] = fib[i-1] + fib[i-2];
+int iterativeFib(int n) {
+    if(n < 2)
+        return n;
+    int prev = 0;
+    int curr = 1;
+    for(int i = 2; i <= n; i++) {
+        int next = prev + curr;
+        prev = curr;
+        curr = next;
     }
-    cout << fib[n] << endl;
+    return curr;
 }
 
 // Nth Fibonacci using recursive approach
@@ -24,7 +25,7 @@ int main() {
     int n;
     cin >> n;
 
-    iterativeFib(n); // Prints 13 for input 7
+    cout << iterativeFib(n) << endl; // Prints 13 for input 7
     cout << recursiveFib(n); // Prints 13 for input 7
 
 
