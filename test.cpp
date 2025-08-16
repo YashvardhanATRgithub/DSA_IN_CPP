@@ -1,5 +1,11 @@
-#include <print>  // Requires C++23
+#include<bits/stdc++.h>
+using namespace std;
 
 int main() {
-    std::print("✅ Hello MRX, you're using C++23 with GCC 15!\n");
+    string str = "Yash";
+
+    cout<< str.length() << endl;
+
+    cout << str.size() << endl;
+
 }
