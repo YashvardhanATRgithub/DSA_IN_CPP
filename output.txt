@@ -1,2 +1,2 @@
-13
-13
+Maximum frequency is: 3 and element is: 1
+Minimum frequency is: 1 and element is: 12
